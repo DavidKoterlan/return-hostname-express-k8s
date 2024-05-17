@@ -39,7 +39,7 @@ This project is the Kubernetes extension of the [Return Hostname Express Applica
     With this command kubectl will apply the return-hostname-app.yaml file. The manifest contains 3 resources:
     - A namespace
     - A deployment for the application which manages 3 replicas. The pods in the deployment use a [public image from Dockerhub](https://hub.docker.com/r/dkoterlan/return-hostname-express) to run their container.
-    - A service to expose the applications with a load balancer. In the background AWS will create a load balancer and the applications will be reachable from one single DNS.
+    - A service to expose the applications with a load balancer. In the background AWS will create a load balancer and the applications will be reachable from one single DNS. It can also take up some minutes.
 
 4. Test the application:
    
