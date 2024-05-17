@@ -15,7 +15,7 @@ This project is the Kubernetes extension of the [Return Hostname Express Applica
 
 ## Prerequisites
 - [eksctl](https://eksctl.io/installation/) installed and AWS configured with appropriate permissions.
-- [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
+- [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) installed.
 - Bash shell environment.
 
 ## Installation and Usage
