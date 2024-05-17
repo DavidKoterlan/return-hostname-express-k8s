@@ -1,0 +1,17 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: return-hostname-cluster
+  region: eu-central-1
+
+vpc:
+  cidr: 10.0.0.0/16
+
+nodeGroups:
+  - name: ng-1
+    instanceType: t2.medium
+    desiredCapacity: 3
+    minSize: 0
+    maxSize: 5
+    volumeSize: 20
