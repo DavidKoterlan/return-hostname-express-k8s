@@ -42,7 +42,8 @@ This project is the Kubernetes extension of the [Return Hostname Express Applica
     - A service to expose the applications with a load balancer. In the background AWS will create a load balancer and the applications will be reachable from one single DNS.
 
 4. Test the application:
-    The repository includes a simple bash script named test-load-balancer.bash. This script retrieves the DNS hostname of the load balancer service and uses the curl command to query it. The purpose of this test is to retrieve the hostname of a pod where the application is running
+   
+    The repository includes a simple bash script named test-load-balancer.bash. This script retrieves the DNS hostname of the load balancer service and uses the curl command to query it. The purpose of this test is to retrieve the hostname of a pod where the application is running.
 
     Make the test script executeable with the following command:
     ```bash
@@ -60,7 +61,7 @@ This project is the Kubernetes extension of the [Return Hostname Express Applica
     ```
     After some execution you should see the load balancer forwards the requests to different pods in the cluster. If any of the pods cease to exists the load balancer can handle the problem by forwarding the request to the other pods. (While the deployment starts a new pod in the place of the terminated pod)
 
-5. Clean up the resources:
+6. Clean up the resources:
     ```bash
     eksctl scale nodegroup --cluster=return-hostname-cluster --name=ng-1 --nodes=0
     eksctl delete cluster --name=return-hostname-cluster
