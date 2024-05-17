@@ -30,7 +30,7 @@ This project is the Kubernetes extension of the [Return Hostname Express Applica
     ```bash
     eksctl create cluster -f aws-cluster.yaml
     ```
-This command will create an EKS cluster with a custom cidr range: `10.0.0.0/16` named `return-hostname-cluster` in the `eu-central-1` region. The cluster will contain one nodegroup of `t2.medium EC2 instances`. The process can take up some minutes.
+    This command will create an EKS cluster named `return-hostname-cluster` in the `eu-central-1` region with a custom cidr range: `10.0.0.0/16`. The cluster will contain one nodegroup of `t2.medium EC2 instances`. The process can take up some minutes.
 
 3. Deploy the application:
     ```bash
