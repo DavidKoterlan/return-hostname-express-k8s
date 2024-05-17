@@ -1,0 +1,15 @@
+# OS and IDE files
+.DS_Store
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+
+# Environment variables file
+.env
+
+# IDE settings
+.vscode/
+.idea/
